@@ -40,7 +40,7 @@ main {
 main::before {
   content: url('./images/bg-pattern-top.svg');
   position: absolute;
-  left: -1%;
+  left: 3%;
   top: -50%;
 }
 
@@ -48,18 +48,38 @@ main::after {
   content: url('./images/bg-pattern-bottom.svg');
   position: absolute;
   bottom: -50%;
-  right: -1%;
+  right: 1%;
 }
 
 /* responsive bubbles */
 
-@media (max-width: 1475px) {
+@media (max-width: 1650px) {
   main::before {
-    left: -30%;
+    left: -10%;
   }
 
   main::after {
-    right: -30%;
+    right: -12%;
+  }
+}
+
+@media (max-width: 1445px) {
+  main::before {
+    left: -20%;
+  }
+
+  main::after {
+    right: -20%;
+  }
+}
+
+@media (max-width: 1220px) {
+  main::before {
+    left: -35%;
+  }
+
+  main::after {
+    right: -35%;
   }
 }
 
