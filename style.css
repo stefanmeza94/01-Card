@@ -69,8 +69,7 @@ main::after {
   }
 
   main::after {
-    right: -15%;
-    bottom: -65%;
+    right: -20%;
   }
 }
 
@@ -111,7 +110,6 @@ main::after {
 
   main::after {
     right: -190%;
-    bottom: -50%;
   }
 }
 
