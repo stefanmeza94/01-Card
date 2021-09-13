@@ -47,7 +47,7 @@ main::before {
 main::after {
   content: url('./images/bg-pattern-bottom.svg');
   position: absolute;
-  bottom: -50%;
+  bottom: -55%;
   right: 1%;
 }
 
@@ -69,7 +69,8 @@ main::after {
   }
 
   main::after {
-    right: -20%;
+    right: -15%;
+    bottom: -65%;
   }
 }
 
@@ -110,6 +111,7 @@ main::after {
 
   main::after {
     right: -190%;
+    bottom: -50%;
   }
 }
 
