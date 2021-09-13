@@ -53,7 +53,7 @@ main::after {
 
 /* responsive bubbles */
 
-@media (max-width: 1400px) {
+@media (max-width: 1475px) {
   main::before {
     left: -30%;
   }
