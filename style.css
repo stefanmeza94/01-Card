@@ -40,22 +40,66 @@ main {
 main::before {
   content: url('./images/bg-pattern-top.svg');
   position: absolute;
-  left: 3%;
-  top: -50%;
+  top: -60%;
+  left: -200%;
+  width: 60vw;
 }
 
 main::after {
   content: url('./images/bg-pattern-bottom.svg');
-  position: absolute;
-  bottom: -55%;
-  right: 1%;
+  position: fixed;
+  bottom: -50%;
+  right: -8%;
+  width: 60vw;
 }
 
-/* responsive bubbles */
+/* RESPONSIVE */
+/* Mobile - L */
+@media (min-width: 425px) {
+  main::before {
+    left: -170%;
+  }
+}
 
-@media (max-width: 1650px) {
+/* Tablet */
+@media (min-width: 760px) {
+  main::before {
+    left: -75%;
+    top: -60%;
+  }
+}
+
+/* Tablet orientation: landscape */
+@media (min-width: 760px) and (orientation: landscape) {
+  main::before {
+    left: -70%;
+    top: -60%;
+  }
+}
+
+@media (min-width: 992px) {
+  main::before {
+    left: -45%;
+    top: -45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main::before {
+    left: -30%;
+    top: -45%;
+  }
+
+  main::after {
+    bottom: -50%;
+    right: -12%;
+  }
+}
+
+@media (min-width: 1400px) {
   main::before {
     left: -10%;
+    top: -45%;
   }
 
   main::after {
@@ -63,55 +107,16 @@ main::after {
   }
 }
 
-@media (max-width: 1445px) {
+@media (min-width: 1650px) {
   main::before {
-    left: -20%;
+    left: 0;
   }
 
   main::after {
-    right: -20%;
+    right: -8%;
   }
 }
 
-@media (max-width: 1220px) {
-  main::before {
-    left: -35%;
-  }
-
-  main::after {
-    right: -35%;
-  }
-}
-
-@media (max-width: 992px) {
-  main::before {
-    left: -50%;
-  }
-
-  main::after {
-    right: -60%;
-  }
-}
-
-@media (max-width: 768px) {
-  main::before {
-    left: -110%;
-  }
-
-  main::after {
-    right: -110%;
-  }
-}
-
-@media (max-width: 480px) {
-  main::before {
-    left: -190%;
-  }
-
-  main::after {
-    right: -190%;
-  }
-}
 
 h3, h4 {
   color: var(--clr-very-dark-blue);
@@ -123,11 +128,13 @@ span {
 }
 
 .card {
+  max-width: 90vw;
   position: relative;
   z-index: 2;
   background-color: white;
   text-align: center;
   border-radius: 12px;
+  box-shadow: 0 0 19px 10px rgba(0, 0, 0, .25);
   overflow: hidden;
 }
 
